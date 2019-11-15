@@ -1,0 +1,14 @@
+/******** about me (index.html) unique content ********/
+
+section img {
+  float: left;
+  margin: 10px 30px 30px 0;
+}
+
+section p {
+  line-height: 32px;
+}
+
+.clear-paragraph {
+  clear: both;
+}
