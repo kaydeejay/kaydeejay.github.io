@@ -9,6 +9,10 @@ section p {
   line-height: 32px;
 }
 
+section p span {
+  font-style: italic;
+}
+
 .clear-paragraph {
   clear: both;
 }
