@@ -1,59 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>About Me</title>
-    <link rel="stylesheet" type="text/css" href="./assets/css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/boilerplate.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/about-me.css">
-    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/boilerplate.css">
+    <link rel="stylesheet" href="./assets/css/about-me.css">
 </head>
+<body class="d-flex flex-column">
 
-<body>
-
-    <nav class="nav-bar">
-        <div class="nav-wrapper">
-            <header>
-                <h1>Kevin Devine-Jones</h1>
-            </header>
-            <a href="https://kaydeejay.github.io/portfolio-contact/">Contact</a>
-            <a href="https://kaydeejay.github.io/portfolio-gallery/">Portfolio</a>
-            <a href="#">About</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="./about-me.html">Kevin Devine-Jones</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link" href="./about-me.html">About Me<span class="sr-only"></span></a>
+                    <a class="nav-item nav-link" href="./portfolio-gallery.html">Portfolio</a>
+                    <a class="nav-item nav-link" href="./contact.html">Contact</a>
+                </div>
+            </div>
         </div>
     </nav>
+    
+    <div class="spacer-div"></div>
 
-    <div class="wrapper">
-        <section>
-            <header>
-                <h2>About Me:</h2>
-            </header>
-            <br />
-            <hr>
-            <br />
-            <img src="./assets/images/kevin-image.jpg" alt="Kevin's Headshot">
-            <p>
-                Welcome to my portfolio! My name is Kevin, and I'm learning to be a software developer. Currently I'm enrolled in the Penn LPS Boot Camp at UPenn in Philadelphia. Before that, I spent a lot of time learning from online resources like freecodecamp.org and Eloquent Javascript, and am always excited to learn new technologies.
-            </p>
-            <p class="clear-paragraph">
-                I graduated from the University of Miami with a BA in Theatre Arts in 2011, and moved to New York. From there I worked in Regional Theatres up and down the East Coast, and I performed in <span>Spider-Man: Turn Off The Dark</span> on Broadway.
-            </p>
-            <br />
-            <p class="clear-paragraph">
-                I now live in Bucks County, PA, with my wife Kristin. I've been spending the last couple of years learning the fundamentals of programming and development, and I'm hoping to make a career change. I've always loved working with computers, both software and hardware.
-            </p>
-        </section>
-
-        <div class="spacer"></div>
-
+    <div class="page-content">  
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">About Me</h5>
+                    <hr>
+                    <img src="./assets/images/kevin-image.jpg" class="float-left" alt="Kevin's Headshot">
+                    <p class="card-text">
+                        Welcome to my portfolio! My name is Kevin, and I'm learning to be a software developer. Currently I'm enrolled in the Penn LPS Boot Camp at UPenn in Philadelphia. Before that, I spent a lot of time learning from online resources like freecodecamp.org and Eloquent Javascript, and am always excited to learn new technologies.
+                    </p>
+                    <p class="card-text about-txt-clr">
+                        I graduated from the University of Miami with a BA in Theatre Arts in 2011, and moved to New York. From there I worked in Regional Theatres up and down the East Coast, and I performed in <span class="italics">Spider-Man: Turn Off The Dark</span> on Broadway.
+                    </p>
+                    <p class="card-text about-txt-clr">
+                        I now live in Bucks County, PA, with my wife Kristin. I've been spending the last couple of years learning the fundamentals of programming and development, and I'm hoping to make a career change. I've always loved working with computers, both software and hardware.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
+    
+    <div class="spacer-div"></div>
 
-    <footer>
-        <p>&#169; 2019</p>
+    <footer class="footer">
+        <div class="container">
+            <p class="text-center">&#169; 2019</p>
+        </div>
     </footer>
 
+  
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
-
 </html>
