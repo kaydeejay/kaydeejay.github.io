@@ -6,6 +6,7 @@
 .width-wrapper {
     position: relative;
     overflow: hidden;
+    transition: 0.5s;
 }
 
 img {
@@ -16,6 +17,7 @@ img {
 .width-wrapper:hover {
     cursor: pointer;
     opacity: 0.5;
+    transition: 0.5s;
 }
 
 .img-caption {
@@ -34,7 +36,7 @@ img {
 @media screen and (min-width: 768px) {
     .img-caption {
         width: 186px;
-        top: 50%;https://code.jquery.com/
+        top: 50%;
     }
 }
 
