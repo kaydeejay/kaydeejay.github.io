@@ -1,0 +1,17 @@
+.width-wrapper {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #7c7c7d;
+    background-color: #fff;
+    transition: 0.5s;
+    border-radius: 5%;
+    padding: 0.5em;
+}
+
+.width-wrapper:hover {
+    cursor: pointer;
+    color: #eee;
+    background-color: #4aaaa5;
+    transition: 0.5s;
+}
