@@ -1,5 +1,40 @@
 const portImages = document.querySelectorAll(".width-wrapper");
 
+const modalDetails = [
+    {
+        name: "random-password",
+        title: "Random Password Generator",
+        description: "Generate a random, secure password with any combination of uppercase, lowercase, special, and numerical characters.",
+        screenshot: "",
+        repoURL: "",
+        pagesURL: ""
+    },
+    {
+        name: "quiz-game",
+        title: "Lord of the Rings Quiz Game",
+        description: "Test your knowledge of Lord of the Rings Characters within the allotted time. The user is scored based on how long it takes them to finish the quiz, and incorrect answers subtract from your time remaining.",
+        screenshot: "",
+        repoURL: "",
+        pagesURL: ""
+    },
+    {
+        name: "dnd-char-gen",
+        title: "Dungeons & Dragons 5th Edition Character Generator",
+        description: "Quickly and easily generate a player character for D&D. This application uses the Open5e API.",
+        screenshot: "",
+        repoURL: "",
+        pagesURL: ""
+    },
+    {
+        name: "weather",
+        title: "Weather Dashboard",
+        description: "Find weather information for a city, including current weather, UV Index, and 5-day forecast. This application uses the OpenWeatherMap API.",
+        screenshot: "",
+        repoURL: "",
+        pagesURL: ""
+    }
+];
+
 portImages.forEach((currentEl) => {
     currentEl.setAttribute("data-toggle", "modal");
     currentEl.setAttribute("data-target", "#portfolioModal");
