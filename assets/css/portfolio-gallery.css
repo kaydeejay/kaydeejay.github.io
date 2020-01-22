@@ -7,9 +7,11 @@
     position: relative;
     overflow: hidden;
     transition: 0.5s;
+    border: 2px solid #4aaaa5;
 }
 
 img {
+    width: 100%;
     margin-top: 0.75em;
     margin-bottom: 0.75em;
 }
@@ -21,7 +23,7 @@ img {
 }
 
 .img-caption {
-    width: 300px;
+    width: 100%;
     font-size: 1em;
     position: absolute;
     z-index: 50;
@@ -39,21 +41,18 @@ img {
 
 @media screen and (min-width: 768px) {
     .img-caption {
-        width: 186px;
         top: 50%;
     }
 }
 
 @media screen and (min-width: 992px) {
     .img-caption {
-        width: 266px;
         top: 70%;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .img-caption {
-        width: 300px;
         top: 70%;
     }
 }
