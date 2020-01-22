@@ -49,13 +49,13 @@ portImages.forEach((currentEl) => {
 function populateModal(){
     const selectedName = this.getAttribute('data-name');
     const modalTitle = document.getElementById("portfolioModalTitle");
-    const modalImage = document.createElement("img");
-    const modalDesc = document.getElementsByClassName("modal-body");
+    const modalImage = document.getElementById("modalImg");
+    const modalDesc = document.getElementById("modalDesc");
     const deployedBtn = document.getElementById("linkDeployed");
     const repoBtn = document.getElementById("linkRepo");
     modalDetails.forEach((currentEl) => {
         if (currentEl.name === selectedName){
-            modalTitle.innerHTML = currentEl.title;
+            modalTitle.textContent = currentEl.title;
             modalImage.setAttribute("src", currentEl.screenshot);
             modalDesc.textContent = currentEl.description;
             deployedBtn.addEventListener('click', () => {
