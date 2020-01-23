@@ -35,6 +35,15 @@ img {
     padding: 0.5em 0 0.5em 0;
 }
 
+#modalImg {
+    width: 90%;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px solid #4aaaa5;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .modal-footer {
     justify-content: center;
 }
