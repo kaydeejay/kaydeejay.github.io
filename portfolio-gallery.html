@@ -1,168 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/boilerplate.css">
-    <link rel="stylesheet" href="./assets/css/portfolio-gallery.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link 
+    rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous" 
+  />
+  <link rel="stylesheet" href="./assets/css/boilerplate.css">
+  <link rel="stylesheet" href="./assets/css/portfolio-gallery.css">
 </head>
-<body class="d-flex flex-column">
+<body>
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html">Kevin Devine-Jones</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link" href="./index.html">About Me <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="./portfolio-gallery.html">Portfolio</a>
+          <a class="nav-item nav-link" href="./contact-page.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container">
-                    <a class="navbar-brand" href="./index.html">Kevin Devine-Jones</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav ml-auto">
-                            <a class="nav-item nav-link" href="./index.html">About Me <span class="sr-only">(current)</span></a>
-                            <a class="nav-item nav-link" href="./portfolio-gallery.html">Portfolio</a>
-                            <a class="nav-item nav-link" href="./contact-page.html">Contact</a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-            
-            <div class="spacer-div"></div>
+  <div class="spacer-div"></div>
 
-            <!-- modal -->
-            <div class="modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-labelledby="portfolioModal" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="portfolioModalTitle">Modal title</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body" id="modalDesc"></div>
-                    <img id="modalImg" src="#">
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-primary" id="linkDeployed" data-dismiss="modal">Go to Github Pages</button>
-                      <button type="button" class="btn btn-primary" id="linkRepo" data-dismiss="modal">Go to Github Repository</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-        
-            <div class="page-content">  
-                <div class="container">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Portfolio</h5>
-                            <hr>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="width-wrapper" data-name="random-password" data-link="https://kaydeejay.github.io/random-password-generator/">
-                                        <img src="./assets/images/portfolio-images/portfolio1-1.jpg" alt="" class="img-fluid">
-                                        <p class="img-caption">
-                                            Random Password Generator
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="width-wrapper" data-name="quiz-game" data-link="https://kaydeejay.github.io/quiz-challenge-game/">
-                                        <img src="./assets/images/portfolio-images/portfolio1-2.jpg" alt="" class="img-fluid">
-                                        <p class="img-caption">
-                                            Lord of the Rings Quiz Game
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="width-wrapper" data-name="dnd-char-gen" data-link="https://kaydeejay.github.io/dnd-char-gen/">
-                                        <img src="./assets/images/portfolio-images/portfolio1-3.jpg" alt="" class="img-fluid">
-                                        <p class="img-caption">
-                                            D&D Character Generator
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="width-wrapper" data-name="weather" data-link="https://kaydeejay.github.io/weather-dashboard/">
-                                        <img src="./assets/images/portfolio-images/portfolio2-1.jpg" alt="" class="img-fluid">
-                                        <p class="img-caption">
-                                            Weather Dashboard
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="width-wrapper" data-name="team-roster-gen" data-link="">
-                                        <img src="./assets/images/portfolio-images/portfolio2-2.jpg" alt="" class="img-fluid">
-                                        <p class="img-caption">
-                                            RSS Reader
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="width-wrapper" data-link="">
-                                        <img src="./assets/images/portfolio-images/portfolio2-3.jpg" alt="" class="img-fluid">
-                                        <p class="img-caption">
-                                            "Simon" Game
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="width-wrapper" data-link="">
-                                        <img src="./assets/images/portfolio-images/portfolio3-1.jpg" alt="" class="img-fluid">
-                                        <p class="img-caption">
-                                            Reddit Browser
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="width-wrapper" data-link="">
-                                        <img src="./assets/images/portfolio-images/portfolio3-2.jpg" alt="" class="img-fluid">
-                                        <p class="img-caption">
-                                            Random Quote Machine
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="width-wrapper" data-link="">
-                                        <img src="./assets/images/portfolio-images/portfolio3-3.jpg" alt="" class="img-fluid">
-                                        <p class="img-caption">
-                                            Caesar Cipher
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <!-- modal -->
+  <div class="modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-labelledby="portfolioModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="portfolioModalTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" id="modalDesc"></div>
+        <img id="modalImg" src="#">
+        <div class="modal-footer" id="modalFooter">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-content">
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Portfolio</h5>
+          <hr>
+
+          <!-- first projects row -->
+          <div class="row">
+            <div class="col-md-4">
+              <div class="width-wrapper" data-index="0"></div>
             </div>
-            
-            <div class="spacer-div"></div>
-        
-            <footer class="footer">
-                <div class="container">
-                    <p class="text-center">&#169; 2020</p>
-                </div>
-            </footer>
-        
-          
-            <script 
-                src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
-                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
-                crossorigin="anonymous">
-            </script>
-            <script 
-                src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
-                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
-                crossorigin="anonymous">
-            </script>
-            <script 
-                src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
-                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
-                crossorigin="anonymous">
-            </script>
-            <script src="./bin/portfolio.js"></script>
-        
+            <div class="col-md-4">
+              <div class="width-wrapper" data-index="1"></div>
+            </div>
+            <div class="col-md-4">
+              <div class="width-wrapper" data-index="2"></div>
+            </div>
+          </div>
+
+          <!-- second projects row -->
+          <div class="row">
+            <div class="col-md-4">
+              <div class="width-wrapper" data-index="3"></div>
+            </div>
+            <div class="col-md-4">
+              <div class="width-wrapper" data-index="4"></div>
+            </div>
+            <div class="col-md-4">
+              <div class="width-wrapper" data-index="5"></div>
+            </div>
+          </div>
+
+          <!-- third projects row -->
+          <div class="row">
+            <div class="col-md-4">
+              <div class="width-wrapper" data-index="6"></div>
+            </div>
+            <div class="col-md-4">
+              <div class="width-wrapper" data-index="7"></div>
+            </div>
+            <div class="col-md-4">
+              <div class="width-wrapper" data-index="8"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="spacer-div"></div>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="text-center">&#169; 2020</p>
+    </div>
+  </footer>
+
+  <script 
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+    crossorigin="anonymous">
+  </script>
+  <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+    crossorigin="anonymous">
+  </script>
+  <script 
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+    crossorigin="anonymous">
+  </script>
+  <script src="./bin/portfolio.js"></script>
+
 </body>
 </html>
