@@ -50,6 +50,10 @@ img {
     justify-content: center;
 }
 
+button {
+    color: white;
+}
+
 @media screen and (max-width: 768px) {
     .col-md-4:not(:first-child) {
         margin-top: 1em;
