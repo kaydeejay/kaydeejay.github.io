@@ -40,6 +40,14 @@ const projects = [
     screenshot: './assets/images/portfolio-images/team-roster-gen.jpg',
     repoURL: 'https://github.com/kaydeejay/team-roster-gen',
     deployedURL: null
+  },
+  {
+    name: 'passport-tutorial',
+    title: 'Passport Tutorial',
+    description: 'A markdown tutorial going through the steps to make a simple login and user authentication page using passportjs.',
+    screenshot: './assets/images/portfolio-images/passport-tutorial.jpg',
+    repoURL: 'https://github.com/kaydeejay/passport-tutorial',
+    deployedURL: null
   }
 ];
 
@@ -47,10 +55,10 @@ const makeProjects = () => {
   portImages.forEach((el) => {
     const thisIndex = el.getAttribute('data-index');
     const thisProject = projects[thisIndex];
-  
+
     el.setAttribute("data-toggle", "modal");
     el.setAttribute("data-target", "#portfolioModal");
-  
+
     if (!thisProject) {
       el.style.display = "none";
     } else {
@@ -68,7 +76,7 @@ const makeProjects = () => {
   });
 }
 
-function populateModal(){
+function populateModal() {
   const project = projects[this.getAttribute('data-index')];
   const modalFooter = document.getElementById('modalFooter');
   const modalTitle = document.getElementById('portfolioModalTitle');
@@ -78,13 +86,13 @@ function populateModal(){
 
   modalFooter.innerHTML = '';
 
-  repoBtn.setAttribute('class','btn');
+  repoBtn.setAttribute('class', 'btn');
   repoBtn.textContent = 'Visit Repository';
   repoBtn.addEventListener('click', () => {
     const win = window.open(project.repoURL, 'blank');
     win.focus();
   });
-  if (project.deployedURL){
+  if (project.deployedURL) {
     const deployedBtn = document.createElement('button');
     deployedBtn.setAttribute('class', 'btn');
     deployedBtn.textContent = 'Deployed Application';
