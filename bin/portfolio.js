@@ -2,6 +2,14 @@ const portImages = document.querySelectorAll(".width-wrapper");
 
 const projects = [
   {
+    name: 'appetizer',
+    title: 'APPetizer',
+    description: 'Create your own online cookbook: search for recipes and save your favorites',
+    screenshot: './assets/images/portfolio-images/appetizer.png',
+    repoURL: 'https://github.com/kaydeejay/app-etizer',
+    deployedURL: 'https://recipe-track.herokuapp.com/'
+  },
+  {
     name: 'dnd-char-gen',
     title: 'Dungeons & Dragons Character Generator',
     description: 'Quickly and easily create a character for D&D 5th Edition',
