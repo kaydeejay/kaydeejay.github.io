@@ -10,6 +10,14 @@ const projects = [
     deployedURL: 'https://game-finder-2020.herokuapp.com/'
   },
   {
+    name: 'react-portfolio',
+    title: 'React Portfolio',
+    description: 'This portfolio, but built using React and deployed on heroku',
+    screenshot: './assets/images/portfolio-images/react-portfolio.png',
+    repoURL: 'https://github.com/kaydeejay/react-portfolio',
+    deployedURL: 'https://kdj-react-portfolio.herokuapp.com/'
+  },
+  {
     name: 'appetizer',
     title: 'APPetizer',
     description: 'Create your own online cookbook: search for recipes and save your favorites',
